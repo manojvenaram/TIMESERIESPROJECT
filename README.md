@@ -14,6 +14,9 @@ To Create a project on Time series analysis on weather forecasting using ARIMA m
 5. Make time series predictions
 6. Auto-fit the ARIMA model
 7. Evaluate model predictions
+
+### DataSet Generation:
+https://github.com/manojvenaram/TEMPERATUREDATA-using-API
 ### PROGRAM:
 #### Import the neccessary packages
 ```
