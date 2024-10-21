@@ -1,9 +1,8 @@
  # A project on Time series analysis on weather forecasting using ARIMA model 
 ### Date: 12-04-2024
 
-### AIM:
-To Create a project on Time series analysis on weather forecasting using ARIMA model in  Python .
-Here's a concise explanation of the ARIMA model in points, suitable for a GitHub post:
+### Description:
+To Create a project on Time series analysis on weather forecasting using ARIMA model in  Python 
 
 ---
 
