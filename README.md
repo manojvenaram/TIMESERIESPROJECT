@@ -3,6 +3,45 @@
 
 ### AIM:
 To Create a project on Time series analysis on weather forecasting using ARIMA model in  Python .
+Here's a concise explanation of the ARIMA model in points, suitable for a GitHub post:
+
+---
+
+### ARIMA Model: A Detailed Overview
+
+**ARIMA (AutoRegressive Integrated Moving Average)** is a popular time series forecasting technique. It combines three components to capture various aspects of time series data.
+
+1. **Autoregressive (AR) Component**: 
+   - Uses dependency between an observation and several lagged observations.
+   - **Order (p)**: Number of lagged observations used in the model.
+   
+2. **Integrated (I) Component**: 
+   - Represents the differencing of raw observations to make the time series stationary.
+   - **Order (d)**: Number of differencing required to remove the trend or make the series stationary.
+
+3. **Moving Average (MA) Component**: 
+   - Uses dependency between an observation and residual errors from a moving average model applied to lagged observations.
+   - **Order (q)**: Number of lagged forecast errors used to correct the prediction.
+
+4. **Model Notation**: 
+   - Expressed as **ARIMA(p, d, q)**, where:
+     - **p**: Order of the autoregressive part.
+     - **d**: Degree of differencing.
+     - **q**: Order of the moving average part.
+
+5. **Stationarity**:
+   - ARIMA assumes that the time series is stationary. Differencing is applied to remove trends and seasonality for stationarity.
+
+6. **Model Selection**:
+   - The values of **p**, **d**, and **q** can be selected using ACF (Autocorrelation Function), PACF (Partial Autocorrelation Function), and AIC/BIC criteria.
+
+7. **Seasonal ARIMA (SARIMA)**:
+   - For seasonal time series, an extended version of ARIMA known as **SARIMA** can be used, represented as **SARIMA(p,d,q)(P,D,Q,m)** where **m** is the number of periods in a season.
+
+8. **Applications**:
+   - ARIMA is widely used in stock price forecasting, economic data analysis, and various other time series predictions.
+
+---
 ### ALGORITHM:
 1. Explore the dataset of weather 
 2. Check for stationarity of time series time series plot
