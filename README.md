@@ -106,6 +106,32 @@ def arima_model(data, target_variable, order):
 arima_model(data, 'temp_max', order=(5,1,0))
 
 ```
+## Challenges Faced with ARIMA Model
+### Stationarity Requirement:
+
+ARIMA assumes the time series is stationary. Non-stationary data requires differencing or transformations, which can be complex.
+### Parameter Selection:
+
+Choosing the right values for p, d, and q can be difficult. Wrong values can lead to poor forecasting performance.
+Requires careful tuning using ACF, PACF plots, and trial-and-error with metrics like AIC/BIC.
+### Seasonality:
+
+ARIMA cannot handle seasonality directly. Seasonal ARIMA (SARIMA) is needed, which adds complexity to the model.
+### Overfitting:
+
+Too many parameters may cause overfitting, where the model fits the noise rather than the actual signal, leading to poor generalization.
+### Large Data Processing:
+
+ARIMA can struggle with large datasets, as it’s a computationally intensive model due to the autoregressive nature and differencing.
+### Sensitive to Outliers:
+
+ARIMA is sensitive to outliers, which can distort predictions and affect the overall performance.
+Assumes Linear Relationships:
+
+ARIMA captures only linear relationships. If the data has nonlinear patterns, ARIMA may not perform well.
+### Lagged Effects:
+
+Forecasting far into the future can become inaccurate, as the model relies on past values and residuals. The further out, the more errors accumulate.
 ### OUTPUT:
 ![image](https://github.com/manojvenaram/TSA_EXP9/assets/94165064/1a62e960-f6ba-4c61-a8eb-c4482f3bba11)
 
